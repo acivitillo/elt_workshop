@@ -2,7 +2,7 @@ from prefect import Flow, task
 from prefect.run_configs import DockerRun
 from prefect.storage import GitHub
 
-ELT_WORKSHOP_REPO = "dyvenia/elt_workshop"
+ELT_WORKSHOP_REPO = "acivitillo/elt_workshop"
 STORAGE = GitHub(
     repo=ELT_WORKSHOP_REPO, path="elt_workshop/prefect/hello_world_sbx.py", ref="sbx"
 )
